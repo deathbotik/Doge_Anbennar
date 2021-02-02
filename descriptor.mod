@@ -3,16 +3,8 @@ dependencies = {
     "Anbennar: A Fantasy Total Conversion Mod"
 }
 tags={
-	"Expansion"
+	"Idea Groups"
 	"Balance"
-	"Events"
-	"Gameplay"
-	"National Ideas"
-	"Religions"
-	"Missions"
-	"Trade Goods"
-	"Ages"
-	"Formables"
 }
 picture="thumbnail.png"
 supported_version="1.30.*.*"
