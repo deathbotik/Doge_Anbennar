@@ -3,7 +3,7 @@
 
 [code]                                  [img] https://i.imgur.com/p7Fv1Z6.gif [/img] [/code]
 [quote]
-Balanced version of idea variation idea groups for Anbennar and some other stuff. Tries to balance the behemoth that is Anbennar for a more balanced SP and mainly MP. I know, weird endevour.
+Balanced version of idea variation idea groups for Anbennar and some minor other stuff. Tries to balance the behemoth that is Anbennar for a more balanced SP and mainly MP. I know, weird endevour. This does not add any new buildings.
 
 [h1]How to? [/h1]
 [quote]This is an addon so put this mod under Anbennar in the launcher.[/quote]
