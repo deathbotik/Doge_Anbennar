@@ -1252,7 +1252,7 @@ romuva0 = {
 		
 	
 	romuva1 = {
-		build_cost = -0.1 #lauko sargei
+		build_cost = -0.05 #lauko sargei
 	}
 	romuva2 = {
 		global_missionary_strength = 0.02 # geschichten
@@ -1734,7 +1734,7 @@ mane0 = {
 	}
 	
 	bonus = {
-		build_cost = -0.1
+		build_cost = -0.05
 	}
 		
 	

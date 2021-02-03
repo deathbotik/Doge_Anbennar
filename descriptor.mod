@@ -1,6 +1,7 @@
 name="Doge Anbennar"
-dependencies = {
-    "Anbennar: A Fantasy Total Conversion Mod"
+dependencies={
+	"Anbennar: A Fantasy Total Conversion Mod"
+	"Anbennar-PublicFork"
 }
 tags={
 	"Idea Groups"
