@@ -1152,7 +1152,6 @@ fire0 = {
 		
 	fire1 = {
 		shock_damage_received = -0.1
-		#Mechanic + 2.5% per age #DISABLED
 	}
 	fire2 = {
 		artillery_bonus_vs_fort = 1
