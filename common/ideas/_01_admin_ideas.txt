@@ -177,94 +177,111 @@ expansion_ideas = {
 	
 
 	ai_will_do = {
-		factor = 10
-		
-		modifier = {
-			factor = 10
-			has_idea_group = exploration_ideas
-		}
-		modifier = {
-			factor = 0.3
-			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
-			}
-		}
-		
+		factor = 0.48
 		modifier = {
 			factor = 10
 			OR = {
-				technology_group = western
-				technology_group = high_american
+				has_idea_group = exploration_ideas
+				is_colonial_nation = yes
 			}
-			personality = ai_colonialist
 		}
 		modifier = {
-			factor = 10
-			technology_group = western
-			personality = ai_capitalist
+			factor = 10	#Boys who wanna settle the Dreadmire and in the future, the Serpentspine
 			OR = {
-				has_idea_group = trade_ideas
-				has_idea_group = maritime_ideas
-				has_idea_group = gross0
-				has_idea_group = handel0
-				has_idea_group = galle0
-			}
-			any_known_country = {
-				OR = {
-					technology_group = indian
-					technology_group = chinese
+				any_owned_province = {
+					OR = {
+						region = ourdia_region
+						region = dostanor_region
+						region = the_borders_region
+					}
+					has_empty_adjacent_province = yes
 				}
 			}
-			num_of_ports = 5
 		}
 		modifier = {
-			factor = 50
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 10
-			NOT = { has_idea_group = exploration_ideas }
-			any_owned_province = {
-				has_empty_adjacent_province = yes
+			factor = 0	#Serpentspine starts alread get colonists
+			capital_scope = {
+				continent = serpentspine
 			}
 			OR = {
-				monthly_income = 15
-				culture_group = east_slavic
-				adm_tech = 13
-				AND = {
-					adm_tech = 9
-					personality = ai_capitalist
-				}
-				AND = {
-					capital_scope = { region = russia_region }
-					NOT = { government = steppe_horde }
-				}
+				has_reform = adventurer_reform
+				has_reform = dwarovar_warband
+				has_reform = dwarovar_squatter
+			}
+		}
+		modifier = {
+			factor = 10	#Serpentspine starts alread get colonists
+			capital_scope = {
+				continent = serpentspine
+			}
+			NOT = { is_year = 1500 }
+			OR = {
+				has_reform = dwarven_clan_reform
 			}
 		}
 		modifier = {
 			factor = 5
 			OR = {
-				religion = totemism
-				religion = inti 
-				religion = nahuatl 
-				religion = mesoamerican_religion 
+				tag = A11 #Pearlsedge
+				tag = A02 #Deranne
+				tag = A21 #Venail
+				tag = A47 #Eborthil
+				tag = A05 #Reveria
+				tag = F08 #Ekha
+				tag = A19 #Portnamm
+				tag = A06 #Nimscodd
+				tag = H66 #Jaherian
+				tag = H67 #Rezankand
+				tag = A79 #Gnomish Hierarchy
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			
+			has_country_modifier = lake_federation_member
+		}
+		modifier = {
+			factor = 100
+			OR = {
+				tag = Z18
+				tag = Z50
+			}
+			num_of_cities = 20
+			any_owned_province = {
+				has_empty_adjacent_province = yes
 			}
 		}
 		modifier = {
-			factor = 3
-			NOT = { has_idea_group = exploration_ideas }
+			factor = 100
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
 			OR = {
-				any_neighbor_country = {
-					has_idea_group = expansion_ideas
-				}
-				any_rival_country = {
-					has_idea_group = expansion_ideas
-				}
+				technology_group = tech_orcish
+				technology_group = tech_goblin
 			}
 			any_owned_province = {
 				has_empty_adjacent_province = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_idea_group = exploration_ideas }
+			NOT = { is_colonial_nation = yes }
+			NOT = {
+				any_owned_province = {
+					has_empty_adjacent_province = yes
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = {
+				technology_group = tech_cannorian
+				technology_group = tech_gnomish
+				technology_group = tech_salahadesi
+				technology_group = tech_elven
+				technology_group = tech_bulwari
+				technology_group = tech_islanders
 			}
 		}
 	}
